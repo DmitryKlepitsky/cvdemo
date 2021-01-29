@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T4P-xi-XWD">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Album Details View Controller-->
+        <scene sceneID="xhS-VQ-NsO">
+            <objects>
+                <viewController storyboardIdentifier="AlbumDetails" id="T4P-xi-XWD" customClass="AlbumDetailsViewController" customModule="cv" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GFx-mS-4dw">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" image="detailedAlbum" translatesAutoresizingMaskIntoConstraints="NO" id="e9y-vH-LHf">
+                                <rect key="frame" x="20" y="54" width="388" height="316"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e9y-vH-LHf" secondAttribute="height" multiplier="415:338" priority="999" id="cr5-bq-zjP"/>
+                                    <constraint firstAttribute="width" secondItem="e9y-vH-LHf" secondAttribute="height" multiplier="97:87" priority="750" id="soa-de-uAP"/>
+                                </constraints>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="soa-de-uAP"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Portrait / Landscape demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XD-ia-1MI">
+                                <rect key="frame" x="113.66666666666669" y="392" width="201" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bAs-LW-2BC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6XD-ia-1MI" firstAttribute="centerY" secondItem="bAs-LW-2BC" secondAttribute="centerY" id="GIB-Lr-Oye"/>
+                            <constraint firstItem="6XD-ia-1MI" firstAttribute="leading" secondItem="e9y-vH-LHf" secondAttribute="trailing" constant="20" id="IZj-3x-yh0"/>
+                            <constraint firstItem="6XD-ia-1MI" firstAttribute="centerX" secondItem="bAs-LW-2BC" secondAttribute="centerX" id="JKu-UQ-Zwm"/>
+                            <constraint firstItem="e9y-vH-LHf" firstAttribute="top" secondItem="bAs-LW-2BC" secondAttribute="top" constant="10" id="PiR-d5-19B"/>
+                            <constraint firstItem="bAs-LW-2BC" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6XD-ia-1MI" secondAttribute="bottom" constant="10" id="RjI-Bz-dE3"/>
+                            <constraint firstItem="e9y-vH-LHf" firstAttribute="centerX" secondItem="bAs-LW-2BC" secondAttribute="centerX" id="Vv5-uu-RZF"/>
+                            <constraint firstItem="e9y-vH-LHf" firstAttribute="top" secondItem="bAs-LW-2BC" secondAttribute="top" constant="37" id="ese-Wu-Kil"/>
+                            <constraint firstItem="6XD-ia-1MI" firstAttribute="top" secondItem="e9y-vH-LHf" secondAttribute="bottom" constant="22" id="hGg-XJ-kdu"/>
+                            <constraint firstItem="e9y-vH-LHf" firstAttribute="leading" secondItem="bAs-LW-2BC" secondAttribute="leading" constant="16" id="hKe-0y-cN3"/>
+                            <constraint firstItem="bAs-LW-2BC" firstAttribute="trailing" secondItem="6XD-ia-1MI" secondAttribute="trailing" constant="16" id="hPv-Kq-1Nr"/>
+                            <constraint firstItem="bAs-LW-2BC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="e9y-vH-LHf" secondAttribute="trailing" constant="20" id="qZP-2J-tix"/>
+                            <constraint firstItem="bAs-LW-2BC" firstAttribute="bottom" secondItem="e9y-vH-LHf" secondAttribute="bottom" constant="32" id="x53-pt-XMl"/>
+                            <constraint firstItem="e9y-vH-LHf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bAs-LW-2BC" secondAttribute="leading" constant="20" id="zgv-t5-cuU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hPv-Kq-1Nr"/>
+                                <exclude reference="x53-pt-XMl"/>
+                                <exclude reference="ese-Wu-Kil"/>
+                                <exclude reference="hKe-0y-cN3"/>
+                                <exclude reference="GIB-Lr-Oye"/>
+                                <exclude reference="IZj-3x-yh0"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="RjI-Bz-dE3"/>
+                                <include reference="hPv-Kq-1Nr"/>
+                                <exclude reference="qZP-2J-tix"/>
+                                <include reference="x53-pt-XMl"/>
+                                <exclude reference="PiR-d5-19B"/>
+                                <exclude reference="Vv5-uu-RZF"/>
+                                <include reference="ese-Wu-Kil"/>
+                                <include reference="hKe-0y-cN3"/>
+                                <exclude reference="zgv-t5-cuU"/>
+                                <include reference="GIB-Lr-Oye"/>
+                                <include reference="IZj-3x-yh0"/>
+                                <exclude reference="JKu-UQ-Zwm"/>
+                                <exclude reference="hGg-XJ-kdu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tN3-Gw-cPR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-310.36717062634989" y="93.925233644859802"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="detailedAlbum" width="720" height="621"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

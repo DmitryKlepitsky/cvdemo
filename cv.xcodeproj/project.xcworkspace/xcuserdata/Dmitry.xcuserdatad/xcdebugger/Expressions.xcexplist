@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AlbumsViewModel.updateCells():AlbumsViewModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AlbumsViewController.tableView(_:numberOfRowsInSection:):AlbumsViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AlbumCellViewModel.title.getter:AlbumCellViewModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AlbumsViewModel.albums.getter:AlbumsViewModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AlbumCell.updateView():AlbumCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Album.titleVal.getter:Album.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in APIService.getResourceInfo(urlString:completion:):APIService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "httpResponse.allHeaderFields">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
